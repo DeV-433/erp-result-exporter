@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "ERP Result Exporter",
+  "description": "One-click export of IIIT-NR ERP academic results to PDF",
+  "version": "1.3",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://erp.iiitnr.edu.in/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Export ERP Results (IIIT-NR)",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
